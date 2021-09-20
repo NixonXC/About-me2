@@ -1,6 +1,6 @@
 const typed = new Typed(".typing", {
 strings: [
-"🐧 Discord Verified Bot Developer.", 
+"🐧 Verified DIscord Bot Developer", 
 "🐔 Web Development Newbie.", 
 "🌌 Html,Css,Js,Python."
 ],
