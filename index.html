@@ -9,9 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        ::-webkit-scrollbar {
+          width: 14px;
+        }
+        ::-webkit-scrollbar-track {
+          background: #8a8a8a9c; 
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #040611;
+        }
+        </style>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
+    <div id="particles-js"></div>
+    <div>
+		<nav class="navMenu">
+      	<a href="index.html">HOME</a>
+      	<a href="https://github.com/nixonxc">GITHUB</a>
+      	<a id="soe" href="mailto:invasionyt19@gmail.com">CONTACT</a>
+      	<a href="#abt">ABOUT</a>
+    </nav>
     <div class="intro">
         <img src="assets/doggo.png" alt="logo" onclick="alert('I like to play video games too!')" width="256" height="256">
         <h1>NixonXC</h1>
@@ -20,20 +39,17 @@
             <span class="typing text-center"></span>
         </h3>
         <br>
-        <div class="text">
-            <p>Hook me up on Discord and Github</p>  
     </div>
-    <div class="social-icons">
-            <a href="https://discord.gg/tTkXGBpXpJ" target="_blank">
-                <i class="material-icons social-icon">discord</i>
-            </a>
-            <a href="https://github.com/nixonxc" target="_blank">
-                <i class="material-icons social-icon">code</i>                            
-            </a>
-            <a href="TheEgg.html" target="_blank">
-                <i class="material-icons social-icon">person</i>                            
-            </a>
-        </div>
+    <div class="about" id="abt">
+        <h1>ABOUT ME</h1>
+        <p>Hello! I am NixonXC a Front End and a Newbie backend Developer <br> I mainly use Python to code and I have a passion for coding Discord bots <br> Currently, I'm learning Flask and Java</p>
+
+    </div>
+    <div class="footer">
+        <p>&copy; NixonXC 2022</p>
+    </div>
     <script src="script.js" type="text/javascript"></script>
+    <script src="particles.js-master/particles.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

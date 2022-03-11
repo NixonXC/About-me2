@@ -1,5 +1,9 @@
 body {
     background-color: #101426;
+    color: white;
+}
+html {
+    scroll-behavior: smooth
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 .intro {
@@ -10,6 +14,29 @@ body {
     text-align: left;
     margin-top: 140px;
     margin-left: 20px;
+}
+.navMenu {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    display: inline;
+    gap: 20px;
+    padding: 13px;
+    width: 100px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.navMenu a:hover {
+    color: red;
 }
 .intro h1 {
     font-size: 50px;
@@ -68,4 +95,44 @@ img {
 
 .social-icon:hover {
     color: darkgray;
+}
+.about {
+    margin-top: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+.footer {
+    bottom: 0px;
+    margin-top: 250px;
+    background-color: #101426;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+}
+@media only screen and (max-width: 768px) {
+    .navp a{
+        display: none;
+    }
+    .navMenu {
+        display: flex;
+    }
+    .navMenu a {
+        display: inline-block;
+    }
+    .navMenu a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    #soe {
+        display: none;
+    }
 }
